@@ -65,7 +65,7 @@ print("ALMA-7 systems online: \(rawLog.count) log lines, \(crew.count) crew memb
 // MARK: - ================= END OF STARTER CODE =================
 
 
-// MARK: - =================== YOUR SOLUTION ===================
+// MARK: - =================== SOLUTION ===================
 
 // Level 1
 func parseReading(_ raw: String) -> Reading? {
