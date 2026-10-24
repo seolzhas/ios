@@ -1,22 +1,7 @@
-// =============================================================
-//  Station ALMA-7, Part II: The Teleporter Incident
-//  iOS Mobile Development · Module 4 · Lab Assignment
-//
-//  How to use:
-//   • Xcode: File → New → Playground → Blank, replace everything
-//     with this file's contents.
-//   • Terminal: swift ALMA7_Part2_Starter.swift
-//
-//  Rules:
-//   • Do NOT modify the STARTER DATA section.
-//   • `!` (force unwrap) is forbidden: −0.5 points each.
-//   • No map / filter / reduce / compactMap.
-//   • Default to struct. Use class only where the task says so.
-// =============================================================
 
 
 // MARK: - =================== STARTER DATA ===================
-// MARK: - Do not modify anything in this section
+
 
 /// Splits a line into fields.
 /// fields("crate:101:120")            -> ["crate", "101", "120"]
