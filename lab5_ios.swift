@@ -1,23 +1,6 @@
-// =============================================================
-//  Station ALMA-7, Part III: The Repair Fleet
-//  iOS Mobile Development · Module 5 · Lab Assignment
-//
-//  How to use:
-//   • Xcode: File → New → Playground → Blank, replace everything
-//     with this file's contents.
-//   • Terminal: swift ALMA7_Part3_Starter.swift
-//
-//  Rules:
-//   • Do NOT modify the STARTER DATA section. LegacyBeacon in
-//     particular must be reached with an extension, not edited.
-//   • `!` (force unwrap) is forbidden: −0.5 points each.
-//   • No map / filter / reduce / compactMap.
-//   • The Health Rule must exist in exactly ONE place in this file.
-// =============================================================
-
 
 // MARK: - =================== STARTER DATA ===================
-// MARK: - Do not modify anything in this section
+
 
 /// Drone records recovered from the fleet registry.
 /// One `kind` does not correspond to any drone type you will build.
