@@ -1,22 +1,5 @@
-// =============================================================
-//  Station ALMA-7: Rescue Protocol
-//  iOS Mobile Development · Module 3 · Lab Assignment
-//
-//  How to use:
-//   • Xcode: File → New → Playground → Blank, replace everything
-//     with this file's contents.
-//   • Terminal: swift ALMA7_Starter.swift
-//
-//  Rules:
-//   • Do NOT modify the STARTER CODE section.
-//   • `!` (force unwrap) is forbidden: −0.5 points each.
-//   • No map / filter / reduce / compactMap.
-//   • Use the exact function names from the assignment PDF.
-// =============================================================
-
 
 // MARK: - =================== STARTER CODE ===================
-// MARK: - Do not modify anything in this section
 
 typealias Reading = (sensor: String, value: Int)
 
