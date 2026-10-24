@@ -2,8 +2,7 @@
 // MARK: - =================== STARTER DATA ===================
 
 
-/// Drone records recovered from the fleet registry.
-/// One `kind` does not correspond to any drone type you will build.
+
 let fleetData: [(kind: String, id: String, charge: Int)] = [
     (kind: "welder",  id: "W-1", charge: 80),
     (kind: "scanner", id: "S-1", charge: 45),
@@ -19,8 +18,7 @@ let sensorData: [(id: String, charge: Int)] = [
     (id: "thermal",  charge: 77)
 ]
 
-/// Hardware from the original station. You may not add anything to this
-/// declaration — no methods, no protocols, no properties.
+
 struct LegacyBeacon {
     let name: String
     let signalStrength: Int
@@ -33,7 +31,7 @@ print("Fleet registry online: \(fleetData.count) drone records, \(sensorData.cou
 // MARK: - ================= END OF STARTER DATA =================
 
 
-// MARK: - =================== YOUR SOLUTION ===================
+// MARK: - =================== SOLUTION ===================
 
 // MARK: Level 1 - The Power Cell
 // A class lets drones share the same PowerCell object when needed.
