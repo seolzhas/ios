@@ -59,7 +59,7 @@ print("ALMA-7 recorder online: \(rawManifest.count) manifest lines, \(deckReadin
 // MARK: - ================= END OF STARTER DATA =================
 
 
-// MARK: - =================== YOUR SOLUTION ===================
+// MARK: - =================== SOLUTION ===================
 
 // MARK: Level 1 - Deck Register
 
@@ -446,8 +446,3 @@ print("After clearing kept reference: deinit has fired")
    fileprivate is needed for auditLine(), because the free function
    auditTranscript(of:) calls it from outside the type but in this file.
 
-Bonus: The BONUS pod does not deinitialize when the do block ends because
-keptPod still holds a reference. It deinitializes when keptPod becomes nil.
-=== compares class object identity. CrewSnapshot is a struct, not a class
-reference, so === cannot compare CrewSnapshot values.
-*/
