@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23500" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+ <device id="retina4_7" orientation="portrait" appearance="light"/>
+ <dependencies><plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23500"/><capability name="Safe area layout guides" minToolsVersion="9.0"/><capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/></dependencies>
+ <scenes><scene sceneID="tne-QT-ifu"><objects>
+ <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab8MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+ <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC"><rect key="frame" x="0.0" y="0.0" width="375" height="667"/><viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+ <subviews>
+ <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="fill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="root-stack">
+ <rect key="frame" x="20" y="95" width="335" height="477"/>
+ <subviews>
+ <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Cover01" translatesAutoresizingMaskIntoConstraints="NO" id="cover-image"><rect key="frame" x="0.0" y="0.0" width="335" height="335"/><constraints><constraint firstAttribute="width" secondItem="cover-image" secondAttribute="height" multiplier="1:1" id="square-cover"/></constraints></imageView>
+ <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="fill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="labels-stack"><rect key="frame" x="0.0" y="349" width="335" height="55"/><subviews>
+ <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Aurora" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="title-label"><fontDescription key="fontDescription" type="boldSystem" pointSize="25"/><color key="textColor" systemColor="labelColor"/></label>
+ <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Aster" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="artist-label"><fontDescription key="fontDescription" type="system" pointSize="16"/><color key="textColor" systemColor="secondaryLabelColor"/></label>
+ </subviews></stackView>
+ <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="fill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="controls-stack"><rect key="frame" x="0.0" y="418" width="335" height="54"/><subviews>
+ <button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prev-button"><constraints><constraint firstAttribute="height" constant="54" id="controls-height"/></constraints><state key="normal"><imageReference key="image" image="backward.fill" catalog="system"/></state><connections><action selector="previousTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="action-prev"/></connections></button>
+ <button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="play-button"><state key="normal"><imageReference key="image" image="play.fill" catalog="system"/></state><connections><action selector="playPauseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="action-play"/></connections></button>
+ <button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="next-button"><state key="normal"><imageReference key="image" image="forward.fill" catalog="system"/></state><connections><action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="action-next"/></connections></button>
+ </subviews></stackView>
+ </subviews></stackView>
+ </subviews>
+ <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+ <constraints>
+ <constraint firstItem="root-stack" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="root-left"/>
+ <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="root-stack" secondAttribute="trailing" constant="20" id="root-right"/>
+ <constraint firstItem="root-stack" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="root-center"/>
+ <constraint firstItem="root-stack" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="root-top"/>
+ <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="root-stack" secondAttribute="bottom" constant="8" id="root-bottom"/>
+ </constraints></view>
+ <connections><outlet property="coverImageView" destination="cover-image" id="out-cover"/><outlet property="titleLabel" destination="title-label" id="out-title"/><outlet property="artistLabel" destination="artist-label" id="out-artist"/><outlet property="playPauseButton" destination="play-button" id="out-play"/></connections>
+ </viewController><placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/></objects><point key="canvasLocation" x="100" y="100"/></scene></scenes>
+ <resources><image name="Cover01" width="640" height="640"/><image name="backward.fill" catalog="system" width="128" height="128"/><image name="play.fill" catalog="system" width="128" height="128"/><image name="forward.fill" catalog="system" width="128" height="128"/>
+ <systemColor name="labelColor"><color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/></systemColor><systemColor name="secondaryLabelColor"><color red="0.235" green="0.235" blue="0.263" alpha="0.6" colorSpace="custom" customColorSpace="sRGB"/></systemColor><systemColor name="systemBackgroundColor"><color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/></systemColor></resources>
+ </document>
