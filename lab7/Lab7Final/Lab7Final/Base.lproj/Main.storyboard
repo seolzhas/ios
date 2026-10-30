@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23500" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23500"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab7Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="ProfileAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="avt-01-aaa">
+                                <rect key="frame" x="148.5" y="75" width="96" height="96"/>
+                                <constraints><constraint firstAttribute="width" constant="96" id="av-w"/><constraint firstAttribute="height" constant="96" id="av-h"/></constraints>
+                                <userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><real key="value" value="48"/></userDefinedRuntimeAttribute></userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Maximilian Alexander von Habsburg" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" translatesAutoresizingMaskIntoConstraints="NO" id="nam-01-aaa">
+                                <rect key="frame" x="16" y="187" width="361" height="58"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="128" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s1n-01-aaa"><fontDescription key="fontDescription" type="boldSystem" pointSize="21"/></label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Posts" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s1t-01-aaa"><fontDescription key="fontDescription" type="system" pointSize="13"/><color key="textColor" systemColor="secondaryLabelColor"/></label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="12.4K" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s2n-01-aaa"><fontDescription key="fontDescription" type="boldSystem" pointSize="21"/></label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Followers" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s2t-01-aaa"><fontDescription key="fontDescription" type="system" pointSize="13"/><color key="textColor" systemColor="secondaryLabelColor"/></label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="843" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s3n-01-aaa"><fontDescription key="fontDescription" type="boldSystem" pointSize="21"/></label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Following" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s3t-01-aaa"><fontDescription key="fontDescription" type="system" pointSize="13"/><color key="textColor" systemColor="secondaryLabelColor"/></label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="div-01-aaa"><color key="backgroundColor" systemColor="separatorColor"/><constraints><constraint firstAttribute="width" constant="1" id="dv1-w"/></constraints></view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="div-02-aaa"><color key="backgroundColor" systemColor="separatorColor"/><constraints><constraint firstAttribute="width" constant="1" id="dv2-w"/></constraints></view>
+                            <button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fol-01-aaa">
+                                <color key="backgroundColor" red="0.145" green="0.388" blue="0.922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints><constraint firstAttribute="height" constant="48" id="fol-h"/></constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Follow"><color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/></state>
+                                <userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><real key="value" value="12"/></userDefinedRuntimeAttribute></userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msg-01-aaa">
+                                <color key="backgroundColor" red="0.90" green="0.94" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Message"><color key="titleColor" red="0.145" green="0.388" blue="0.922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/></state>
+                                <userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><real key="value" value="12"/></userDefinedRuntimeAttribute></userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="About" translatesAutoresizingMaskIntoConstraints="NO" id="abt-01-aaa"><fontDescription key="fontDescription" type="boldSystem" pointSize="19"/></label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Creative developer, coffee enthusiast and lifelong learner. Building thoughtful digital experiences and exploring new ideas every day." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="bio-01-aaa"><fontDescription key="fontDescription" type="system" pointSize="15"/><color key="textColor" systemColor="secondaryLabelColor"/></label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="avt-01-aaa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="c01"/>
+                            <constraint firstItem="avt-01-aaa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c02"/>
+                            <constraint firstItem="nam-01-aaa" firstAttribute="top" secondItem="avt-01-aaa" secondAttribute="bottom" constant="12" id="c03"/>
+                            <constraint firstItem="nam-01-aaa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c04"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nam-01-aaa" secondAttribute="trailing" constant="16" id="c05"/>
+                            <constraint firstItem="s1n-01-aaa" firstAttribute="top" secondItem="nam-01-aaa" secondAttribute="bottom" constant="24" id="c06"/>
+                            <constraint firstItem="s1n-01-aaa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c07"/>
+                            <constraint firstItem="s2n-01-aaa" firstAttribute="leading" secondItem="s1n-01-aaa" secondAttribute="trailing" id="c08"/>
+                            <constraint firstItem="s3n-01-aaa" firstAttribute="leading" secondItem="s2n-01-aaa" secondAttribute="trailing" id="c09"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s3n-01-aaa" secondAttribute="trailing" constant="16" id="c10"/>
+                            <constraint firstItem="s1n-01-aaa" firstAttribute="width" secondItem="s2n-01-aaa" secondAttribute="width" id="c11"/>
+                            <constraint firstItem="s2n-01-aaa" firstAttribute="width" secondItem="s3n-01-aaa" secondAttribute="width" id="c12"/>
+                            <constraint firstItem="s2n-01-aaa" firstAttribute="centerY" secondItem="s1n-01-aaa" secondAttribute="centerY" id="c13"/>
+                            <constraint firstItem="s3n-01-aaa" firstAttribute="centerY" secondItem="s1n-01-aaa" secondAttribute="centerY" id="c14"/>
+                            <constraint firstItem="s1t-01-aaa" firstAttribute="top" secondItem="s1n-01-aaa" secondAttribute="bottom" constant="4" id="c15"/>
+                            <constraint firstItem="s2t-01-aaa" firstAttribute="top" secondItem="s2n-01-aaa" secondAttribute="bottom" constant="4" id="c16"/>
+                            <constraint firstItem="s3t-01-aaa" firstAttribute="top" secondItem="s3n-01-aaa" secondAttribute="bottom" constant="4" id="c17"/>
+                            <constraint firstItem="s1t-01-aaa" firstAttribute="centerX" secondItem="s1n-01-aaa" secondAttribute="centerX" id="c18"/>
+                            <constraint firstItem="s2t-01-aaa" firstAttribute="centerX" secondItem="s2n-01-aaa" secondAttribute="centerX" id="c19"/>
+                            <constraint firstItem="s3t-01-aaa" firstAttribute="centerX" secondItem="s3n-01-aaa" secondAttribute="centerX" id="c20"/>
+                            <constraint firstItem="div-01-aaa" firstAttribute="centerX" secondItem="s1n-01-aaa" secondAttribute="trailing" id="c21"/>
+                            <constraint firstItem="div-02-aaa" firstAttribute="centerX" secondItem="s2n-01-aaa" secondAttribute="trailing" id="c22"/>
+                            <constraint firstItem="div-01-aaa" firstAttribute="top" secondItem="s1n-01-aaa" secondAttribute="top" id="c23"/>
+                            <constraint firstItem="div-02-aaa" firstAttribute="top" secondItem="s1n-01-aaa" secondAttribute="top" id="c24"/>
+                            <constraint firstItem="div-01-aaa" firstAttribute="bottom" secondItem="s1t-01-aaa" secondAttribute="bottom" id="c25"/>
+                            <constraint firstItem="div-02-aaa" firstAttribute="bottom" secondItem="s1t-01-aaa" secondAttribute="bottom" id="c26"/>
+                            <constraint firstItem="fol-01-aaa" firstAttribute="top" secondItem="s1t-01-aaa" secondAttribute="bottom" constant="24" id="c27"/>
+                            <constraint firstItem="fol-01-aaa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c28"/>
+                            <constraint firstItem="msg-01-aaa" firstAttribute="leading" secondItem="fol-01-aaa" secondAttribute="trailing" constant="12" id="c29"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="msg-01-aaa" secondAttribute="trailing" constant="16" id="c30"/>
+                            <constraint firstItem="fol-01-aaa" firstAttribute="width" secondItem="msg-01-aaa" secondAttribute="width" id="c31"/>
+                            <constraint firstItem="fol-01-aaa" firstAttribute="height" secondItem="msg-01-aaa" secondAttribute="height" id="c32"/>
+                            <constraint firstItem="fol-01-aaa" firstAttribute="centerY" secondItem="msg-01-aaa" secondAttribute="centerY" id="c33"/>
+                            <constraint firstItem="abt-01-aaa" firstAttribute="top" secondItem="fol-01-aaa" secondAttribute="bottom" constant="24" id="c34"/>
+                            <constraint firstItem="abt-01-aaa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c35"/>
+                            <constraint firstItem="bio-01-aaa" firstAttribute="top" secondItem="abt-01-aaa" secondAttribute="bottom" constant="8" id="c36"/>
+                            <constraint firstItem="bio-01-aaa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c37"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bio-01-aaa" secondAttribute="trailing" constant="16" id="c38"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bio-01-aaa" secondAttribute="bottom" constant="8" id="c39"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ProfileAvatar" width="96" height="96"/>
+        <systemColor name="labelColor"><color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/></systemColor>
+        <systemColor name="secondaryLabelColor"><color red="0.235" green="0.235" blue="0.263" alpha="0.6" colorSpace="custom" customColorSpace="sRGB"/></systemColor>
+        <systemColor name="separatorColor"><color red="0.235" green="0.235" blue="0.263" alpha="0.29" colorSpace="custom" customColorSpace="sRGB"/></systemColor>
+        <systemColor name="systemBackgroundColor"><color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/></systemColor>
+    </resources>
+</document>
